@@ -1,0 +1,6 @@
+<h1> 👨🏼‍🎤 Artists Index 👨🏼‍🎤 </h1>
+<ul>
+  <% @artists.each do |artist| %>
+    <li><%= link_to artist.name, artist %> - <%= artist.song_count%> songs </li>
+  <%end%>
+</ul>
