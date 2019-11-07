@@ -3,7 +3,9 @@
 <%= form_for @artist  do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
-  <br />
+  
+  <%= f.collection_select(:id, @songs, :id, :title) %><br>
 
+  <br />
   <%= f.submit %>
 <% end %>
